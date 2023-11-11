@@ -3,32 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap">
 
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
     <title>StoryLocket</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #dce6d8;
+            background-image: url('images/vintage\ website\ background.png');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #475353;
             color: #2d2c2c;
             text-align: center;
-            padding: 1em;
+            padding: 0vh;
         }
+
 
         .logo {
             font-family: 'Pacifico', cursive;
-            font-size: 4em;
+            font-size: 5em;
             color: #f7e2d7;
         }
+        .topnav {
+            
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
 
-        section {
-            margin: 20px;
+        .topnav a {
+            float: left;
+            display: block;
+            color: #fff;
             text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .topnav a.active {
+            background-color: rgb(11, 11, 11);
+            color: white
+        }
+
+        #text-section {
+        margin: 60px auto;
+        max-width: 800px;
+        text-align: center;
+        font-family: 'Nanum Brush Script', cursive;
+        color: beige;
+        font-size: 2em;
+        padding: 2% 2%;
+    }
+        #section {
+            margin: 10px;
+            text-align: center;
+            padding-top: 10em;
+            padding-left: 20em;
+            color: beige;
         }
     </style>
 </head>
@@ -37,21 +81,25 @@
     <header>
         <h1 class="logo">StoryLocket</h1>
     </header>
-
-    <section>
+    <div class= "topnav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#yourstory">Your Story</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="section">
         <h2>You have a story to tell.</h2>
         <p>Unleash it.   Share it.   Keep it.</p>
-        <p>Life is brief, but your story is timeless. We help your story transcend the ages.</p>
-        <!-- Additional content goes here -->
+        <p>Life is brief, but your story is timeless.</p>
+        <p>We help your story transcend the ages.</p>
     </section>
-    <div class="container">
-        <div class="img-col">
-        <img src=images/open_book.jpg alt="blank page" width="400" height="500">
-        </div>
-        <div class="text-col">
+
+    <sectiond id="text-section">
             <h1>"There is no greater agony than bearing an untold story inside you."</h1>
             <h2>-Maya Angelou</h2>
-        </div>
+        </section>
 
 </body>
 </html>
